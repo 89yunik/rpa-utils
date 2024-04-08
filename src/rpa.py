@@ -1,4 +1,4 @@
-from components.utils.os import close_programs
+from components.utils.etc import close_programs
 from config import *
 
 def rpa_main(): 
