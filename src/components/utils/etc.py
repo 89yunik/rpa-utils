@@ -1,5 +1,6 @@
-from os import system
+from os import system, listdir, path, remove
 from typing import List
+from time import time
 
 def close_program(program:str):
     try: system(f'taskkill /f /im {program}')
@@ -18,3 +19,12 @@ def update_txt(txt_path:str, data:List[str]):
     f = open(txt_path, 'w')
     f.writelines(data)
     f.close()
+
+def delete_expired_files(directory:str, expiration_period:int):
+    current_time:float = time()
+    for filename in listdir(directory):
+        filepath:str = path.join(directory, filename)
+
+        modification_time:int = path.getmtime(filepath)
+
+        if (current_time - modification_time) > (expiration_period * 24 * 3600): remove(filepath)
