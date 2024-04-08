@@ -1,6 +1,7 @@
 from os import system, listdir, path, remove
-from typing import List
+from typing import List, Sequence
 from time import time
+import random
 
 def close_program(program:str):
     try: system(f'taskkill /f /im {program}')
@@ -27,3 +28,7 @@ def delete_expired_files(directory:str, expiration_period:int):
         modification_time:int = path.getmtime(filepath)
         expiration_seconds = expiration_period * 24 * 3600
         if (current_time - modification_time) > expiration_seconds: remove(filepath)
+
+def generate_random_string(character_set:Sequence, length:int):
+    random_string = ''.join(random.choice(character_set) for _ in range(length))
+    return random_string
