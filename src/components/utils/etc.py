@@ -32,3 +32,7 @@ def delete_expired_files(directory:str, expiration_period:int):
 def generate_random_string(character_set:Sequence, length:int):
     random_string = ''.join(random.choice(character_set) for _ in range(length))
     return random_string
+
+def search_file_names_from_directory(directory:str, keyword:str)->List[str]:
+    target_files:List[str] = [file_name for file_name in listdir(directory) if keyword in file_name]
+    return target_files
