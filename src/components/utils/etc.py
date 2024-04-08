@@ -24,7 +24,6 @@ def delete_expired_files(directory:str, expiration_period:int):
     current_time:float = time()
     for filename in listdir(directory):
         filepath:str = path.join(directory, filename)
-
         modification_time:int = path.getmtime(filepath)
-
-        if (current_time - modification_time) > (expiration_period * 24 * 3600): remove(filepath)
+        expiration_seconds = expiration_period * 24 * 3600
+        if (current_time - modification_time) > expiration_seconds: remove(filepath)
