@@ -2,7 +2,7 @@ from functools import partial
 
 from components.utils.error_handling import error_handler
 from components.utils.etc import delete_expired_files, close_programs
-from components.utils.outlook import Outlook
+from components.utils.outlook_control import Outlook
 import config
 
 dev_mail = config.DEV_MAIL
