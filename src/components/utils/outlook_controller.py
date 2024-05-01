@@ -1,7 +1,7 @@
 import win32com.client as w32
 from .etc import close_program
 
-class Outlook:
+class OutlookController:
     app = w32.gencache.EnsureDispatch('Outlook.Application')
 
     @staticmethod
@@ -9,7 +9,7 @@ class Outlook:
 
     @staticmethod
     def send_mail(to:str, subject:str, contents:str, attachment:str=None, cc:str=None):
-        new_mail = Outlook.app.CreateItem(0)
+        new_mail = OutlookController.app.CreateItem(0)
         new_mail.To = to
         new_mail.Subject = subject
         new_mail.HTMLBody = contents
