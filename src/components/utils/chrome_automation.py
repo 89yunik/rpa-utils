@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from .error_handler import error_handler
 
-class ChromeController:
+class ChromeAutomation:
     def __init__(self):
         self.driver:None = None
         

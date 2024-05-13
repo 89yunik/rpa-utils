@@ -4,15 +4,15 @@ from time import sleep
 
 from components.utils.error_handler import error_handler
 from components.utils.etc import delete_expired_files, close_programs
-# from components.utils.outlook_controller import OutlookController
-from components.utils.chrome_controller import ChromeController
+# from components.utils.outlook_controller import OutlookAutomation
+from components.utils.chrome_automation import ChromeAutomation
 import config
 
 dev_mail = config.DEV_MAIL
 error_mail_subject = config.ERROR_MAIL_SUBJECT
 error_mail_contents = config.ERROR_MAIL_CONTENTS
 
-# send_mail_error_handler:partial = partial(error_handler, on_exception=OutlookController.send_mail, to=dev_mail, subject=error_mail_subject, contents=error_mail_contents)
+# send_mail_error_handler:partial = partial(error_handler, on_exception=OutlookAutomation.send_mail, to=dev_mail, subject=error_mail_subject, contents=error_mail_contents)
 
 @error_handler()
 # @send_mail_error_handler()
