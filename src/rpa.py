@@ -3,7 +3,7 @@ from functools import partial
 from time import sleep
 
 from components.utils.error_handler import error_handler
-from components.utils.etc import delete_expired_files, close_programs
+from components.utils.etc import delete_expired_files, kill_tasks
 # from components.utils.outlook_controller import OutlookAutomation
 from components.utils.chrome_automation import ChromeAutomation
 import config
@@ -22,7 +22,7 @@ def rpa_main():
     
     try: delete_expired_files(dir=log_dir, expiration_period=30)
     except: pass
-    close_programs([])
+    kill_tasks([])
 
     if len(argv)>1:
         for user_inputs in argv[1:]: print(user_inputs)

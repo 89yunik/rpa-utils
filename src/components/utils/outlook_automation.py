@@ -1,5 +1,5 @@
 import win32com.client as w32
-from .etc import close_program
+from .etc import kill_task
 from .error_handler import error_handler
 
 class OutlookAutomation:
@@ -7,7 +7,7 @@ class OutlookAutomation:
 
     @staticmethod
     @error_handler()
-    def close(): close_program(program='OUTLOOK.EXE')
+    def close(): kill_task(program='OUTLOOK.EXE')
 
     @staticmethod
     @error_handler()

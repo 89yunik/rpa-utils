@@ -3,12 +3,12 @@ from typing import List, Sequence
 from time import time
 import random
 
-def close_program(program:str):
+def kill_task(program:str):
     try: system(f'taskkill /f /im {program}')
     except: pass
 
-def close_programs(programs:List[str]):
-    for program in programs: close_program(program=program)
+def kill_tasks(programs:List[str]):
+    for program in programs: kill_task(program=program)
 
 def get_txt(txt_path:str)->List[str]:
     f = open(txt_path, 'r')
