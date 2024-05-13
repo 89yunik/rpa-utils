@@ -1,0 +1,112 @@
+2024-05-13 09:37:52 PM INFO:
+func : rpa_main
+kwargs : {}
+
+2024-05-13 09:37:52 PM ERROR:
+func : rpa_main
+exc : ChromeAutomation.__init__() got an unexpected keyword argument 'chrome_driver_path'
+traceback : Traceback (most recent call last):
+  File "C:\Users\brigh\Documents\코딩\projects\RPA\src\components\utils\error_handler.py", line 14, in wrapper
+    returned_value = target_function(*args, **kwargs)
+  File "C:\Users\brigh\Documents\코딩\projects\RPA\src\rpa.py", line 34, in rpa_main
+    chrome_test = ChromeAutomation(chrome_driver_path=chrome_driver_path)
+TypeError: ChromeAutomation.__init__() got an unexpected keyword argument 'chrome_driver_path'
+
+2024-05-13 09:38:09 PM INFO:
+func : rpa_main
+kwargs : {}
+
+2024-05-13 09:38:09 PM ERROR:
+func : rpa_main
+exc : ChromeAutomation.__init__() got an unexpected keyword argument 'driver_path'
+traceback : Traceback (most recent call last):
+  File "C:\Users\brigh\Documents\코딩\projects\RPA\src\components\utils\error_handler.py", line 14, in wrapper
+    returned_value = target_function(*args, **kwargs)
+  File "C:\Users\brigh\Documents\코딩\projects\RPA\src\rpa.py", line 34, in rpa_main
+    chrome_test = ChromeAutomation(driver_path=chrome_driver_path)
+TypeError: ChromeAutomation.__init__() got an unexpected keyword argument 'driver_path'
+
+2024-05-13 09:38:42 PM INFO:
+func : rpa_main
+kwargs : {}
+
+2024-05-13 09:38:42 PM INFO:
+func : start_browser
+kwargs : {'driver_path': 'C:\\Users\\brigh\\Documents\\코딩\\projects\\RPA\\ref\\chromedriver.exe'}
+
+2024-05-13 09:38:44 PM INFO:
+return : Browser started
+
+2024-05-13 09:38:44 PM INFO:
+func : open_url
+kwargs : {'url': 'https://www.naver.com'}
+
+2024-05-13 09:38:45 PM INFO:
+return : URL opened
+
+2024-05-13 09:38:45 PM INFO:
+func : control_elements_by_xpath
+kwargs : {}
+
+2024-05-13 09:38:46 PM INFO:
+return : Element control finished
+
+2024-05-13 09:38:48 PM INFO:
+return : None
+
+2024-05-13 09:38:56 PM INFO:
+func : rpa_main
+kwargs : {}
+
+2024-05-13 09:38:56 PM INFO:
+func : start_browser
+kwargs : {'driver_path': 'C:\\Users\\brigh\\Documents\\코딩\\projects\\RPA\\ref\\chromedriver.exe'}
+
+2024-05-13 09:38:57 PM INFO:
+return : Browser started
+
+2024-05-13 09:38:57 PM INFO:
+func : open_url
+kwargs : {'url': 'https://www.naver.com'}
+
+2024-05-13 09:38:58 PM INFO:
+return : URL opened
+
+2024-05-13 09:38:58 PM INFO:
+func : control_elements_by_xpath
+kwargs : {}
+
+2024-05-13 09:38:59 PM INFO:
+return : Element control finished
+
+2024-05-13 09:39:06 PM INFO:
+return : None
+
+2024-05-13 09:41:08 PM INFO:
+func : rpa_main
+kwargs : {}
+
+2024-05-13 09:41:08 PM INFO:
+func : start_browser
+kwargs : {'driver_path': 'C:\\Users\\brigh\\Documents\\코딩\\projects\\RPA\\ref\\chromedriver.exe'}
+
+2024-05-13 09:41:09 PM INFO:
+return : Browser started
+
+2024-05-13 09:41:09 PM INFO:
+func : open_url
+kwargs : {'url': 'https://www.naver.com'}
+
+2024-05-13 09:41:10 PM INFO:
+return : URL opened
+
+2024-05-13 09:41:10 PM INFO:
+func : control_elements_by_xpath
+kwargs : {}
+
+2024-05-13 09:41:11 PM INFO:
+return : Element control finished
+
+2024-05-13 09:41:18 PM INFO:
+return : Program exited
+

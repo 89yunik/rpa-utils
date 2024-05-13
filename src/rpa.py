@@ -1,6 +1,7 @@
 from sys import argv
 from functools import partial
 from time import sleep
+from os import path
 
 from components.utils.error_handler import error_handler
 from components.utils.etc import delete_expired_files, kill_tasks
@@ -27,5 +28,16 @@ def rpa_main():
     if len(argv)>1:
         for user_inputs in argv[1:]: print(user_inputs)
 
+    # chrome_driver_path = path.join(ref_dir, 'chromedriver.exe')
+    # naver_url = "https://www.naver.com"
+
+    # chrome_test = ChromeAutomation()
+    # chrome_test.start_browser(driver_path=chrome_driver_path)
+    # chrome_test.open_url(url=naver_url)
+    # chrome_test.control_elements_by_xpath({'//*[@id="query"]':'test'})
+    # sleep(5)
+
+    rpa_main_log = 'Program exited'
+    return rpa_main_log
 
 if __name__=="__main__": rpa_main()
