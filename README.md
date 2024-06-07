@@ -4,3 +4,7 @@ Robotic Process Automation 개발을 위해 사용한 공용 코드를 정리한
 - 웹 크롤링
 - SAP 제어
 - Excel 제어
+## 사용 기술
+- Python
+- Pandas
+- Shell Script
