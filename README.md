@@ -1,5 +1,5 @@
-# RPA 공용 코드
-Robotic Process Automation 개발을 위해 사용한 공용 코드를 정리한 프로젝트입니다.
+# rpa-utils
+Robotic Process Automation 개발을 위해 사용한 공용 Code를 정리한 프로젝트입니다.
 
 ## 획득 역량
 ### Programming 협업 역량
