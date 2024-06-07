@@ -2,7 +2,7 @@
 Robotic Process Automation 개발을 위해 사용한 공용 코드를 정리한 프로젝트입니다.
 
 ## 획득 역량
-### 프로그래밍 협업 역량
+### Programming 협업 역량
 #### 유지보수성
 - Error Handling과 Logging을 위해 Decorator 활용
 - Module-level Testing을 고려해 Program 결합도 축소
